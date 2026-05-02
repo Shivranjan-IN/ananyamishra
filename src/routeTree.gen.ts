@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as QuizRouteImport } from './routes/quiz'
 import { Route as QuestionRouteImport } from './routes/question'
+import { Route as CakeRouteImport } from './routes/cake'
 import { Route as IndexRouteImport } from './routes/index'
 
 const QuizRoute = QuizRouteImport.update({
@@ -23,6 +24,11 @@ const QuestionRoute = QuestionRouteImport.update({
   path: '/question',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CakeRoute = CakeRouteImport.update({
+  id: '/cake',
+  path: '/cake',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/question' | '/quiz'
+  fullPaths: '/' | '/cake' | '/question' | '/quiz'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/question' | '/quiz'
-  id: '__root__' | '/' | '/question' | '/quiz'
+  to: '/' | '/cake' | '/question' | '/quiz'
+  id: '__root__' | '/' | '/cake' | '/question' | '/quiz'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CakeRoute: typeof CakeRoute
   QuestionRoute: typeof QuestionRoute
   QuizRoute: typeof QuizRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuestionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cake': {
+      id: '/cake'
+      path: '/cake'
+      fullPath: '/cake'
+      preLoaderRoute: typeof CakeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CakeRoute: CakeRoute,
   QuestionRoute: QuestionRoute,
   QuizRoute: QuizRoute,
 }
