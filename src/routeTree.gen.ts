@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SurpriseRouteImport } from './routes/surprise'
 import { Route as QuizRouteImport } from './routes/quiz'
 import { Route as QuestionRouteImport } from './routes/question'
 import { Route as CakeRouteImport } from './routes/cake'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SurpriseRoute = SurpriseRouteImport.update({
+  id: '/surprise',
+  path: '/surprise',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const QuizRoute = QuizRouteImport.update({
   id: '/quiz',
   path: '/quiz',
@@ -40,12 +46,14 @@ export interface FileRoutesByFullPath {
   '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
+  '/surprise': typeof SurpriseRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
+  '/surprise': typeof SurpriseRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,14 @@ export interface FileRoutesById {
   '/cake': typeof CakeRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
+  '/surprise': typeof SurpriseRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cake' | '/question' | '/quiz'
+  fullPaths: '/' | '/cake' | '/question' | '/quiz' | '/surprise'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cake' | '/question' | '/quiz'
-  id: '__root__' | '/' | '/cake' | '/question' | '/quiz'
+  to: '/' | '/cake' | '/question' | '/quiz' | '/surprise'
+  id: '__root__' | '/' | '/cake' | '/question' | '/quiz' | '/surprise'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,10 +76,18 @@ export interface RootRouteChildren {
   CakeRoute: typeof CakeRoute
   QuestionRoute: typeof QuestionRoute
   QuizRoute: typeof QuizRoute
+  SurpriseRoute: typeof SurpriseRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/surprise': {
+      id: '/surprise'
+      path: '/surprise'
+      fullPath: '/surprise'
+      preLoaderRoute: typeof SurpriseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/quiz': {
       id: '/quiz'
       path: '/quiz'
@@ -107,6 +124,7 @@ const rootRouteChildren: RootRouteChildren = {
   CakeRoute: CakeRoute,
   QuestionRoute: QuestionRoute,
   QuizRoute: QuizRoute,
+  SurpriseRoute: SurpriseRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
