@@ -27,13 +27,13 @@ function QuestionPage() {
 
   const teases = [
     "No",
-    "Are you sure?",
-    "Really?",
-    "Think again 👀",
-    "Last chance…",
-    "I don't believe you 💔",
-    "Try harder 😏",
-    "Nope, can't click me",
+    "Arre Lali, sach bolo 😆",
+    "Itna bhi kya sochna 👀",
+    "Try again, Lali 😏",
+    "Lali pleaseeee 🙈",
+    "Ek baar aur soch lo 💭",
+    "Nahi chalega Lali 💔",
+    "Catch me if you can, Lali 🏃‍♀️",
   ];
   const noLabel = teases[Math.min(dodges, teases.length - 1)];
 
@@ -46,10 +46,10 @@ function QuestionPage() {
           animate={{ opacity: 1, y: 0 }}
           className="font-serif-display text-5xl md:text-7xl text-shimmer leading-tight"
         >
-          Do you love me?
+          Lali, do you enjoy talking to me? 😄
         </motion.h1>
         <p className="font-script text-2xl text-accent">
-          {dodges === 0 ? "(be honest 👉👈)" : `caught dodging ${dodges} time${dodges > 1 ? "s" : ""} 😆`}
+          {dodges === 0 ? "(sach sach bolna Lali 👉👈)" : `Lali, ${dodges} baar bhaag chuki ho 😆`}
         </p>
 
         <div className="relative h-40 flex items-center justify-center gap-6">
