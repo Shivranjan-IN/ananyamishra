@@ -29,10 +29,10 @@ const questions: Q[] = [
     tease: "Nope. It's literally infinite. Try again 😤",
   },
   {
-    q: "What's the best part of my day?",
-    options: ["Coffee ☕", "Texting you 📱", "Sleeping", "Pizza 🍕"],
-    correct: 1,
-    tease: "Cute guess, but no. It's you. Always you.",
+    q: "What's the best part of my day lately? 😄",
+    options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
+    correct: 2,
+    tease: "Hmm Lali, soch ke bata 👀 (hint: it's you 💖)",
   },
 ];
 
