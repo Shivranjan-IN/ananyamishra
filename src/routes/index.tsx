@@ -80,7 +80,7 @@ function Index() {
               <div className="space-y-3">
                 <p className="font-script text-2xl md:text-3xl text-accent">a little something for</p>
                 <h1 className="font-serif-display text-5xl md:text-7xl tracking-wide text-shimmer leading-tight">
-                  My Forever Girl
+                  Lali 💖
                 </h1>
                 <p className="text-muted-foreground text-base md:text-lg italic">
                   Open the gift below — it’s waiting for you 💝
@@ -112,7 +112,7 @@ function Index() {
                 transition={{ delay: 0.5, duration: 0.9, ease: "easeOut" }}
                 className="font-serif-display text-6xl md:text-9xl text-shimmer leading-none animate-pulse-glow"
               >
-                My Love
+                Lali 💕
               </motion.h1>
 
               <motion.div
