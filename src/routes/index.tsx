@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import confetti from "canvas-confetti";
@@ -166,6 +167,19 @@ function Index() {
               >
                 One more wish ✨
               </motion.button>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2.4 }}
+              >
+                <Link
+                  to="/question"
+                  className="font-script text-xl text-accent underline-offset-4 hover:underline"
+                >
+                  but wait… there's more →
+                </Link>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
