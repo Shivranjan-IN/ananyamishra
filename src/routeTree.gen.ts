@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SurpriseRouteImport } from './routes/surprise'
 import { Route as QuizRouteImport } from './routes/quiz'
 import { Route as QuestionRouteImport } from './routes/question'
+import { Route as MemoryRouteImport } from './routes/memory'
 import { Route as CakeRouteImport } from './routes/cake'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -30,6 +31,11 @@ const QuestionRoute = QuestionRouteImport.update({
   path: '/question',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MemoryRoute = MemoryRouteImport.update({
+  id: '/memory',
+  path: '/memory',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CakeRoute = CakeRouteImport.update({
   id: '/cake',
   path: '/cake',
@@ -44,6 +50,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cake': typeof CakeRoute
+  '/memory': typeof MemoryRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
   '/surprise': typeof SurpriseRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cake': typeof CakeRoute
+  '/memory': typeof MemoryRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
   '/surprise': typeof SurpriseRoute
@@ -59,21 +67,30 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cake': typeof CakeRoute
+  '/memory': typeof MemoryRoute
   '/question': typeof QuestionRoute
   '/quiz': typeof QuizRoute
   '/surprise': typeof SurpriseRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cake' | '/question' | '/quiz' | '/surprise'
+  fullPaths: '/' | '/cake' | '/memory' | '/question' | '/quiz' | '/surprise'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cake' | '/question' | '/quiz' | '/surprise'
-  id: '__root__' | '/' | '/cake' | '/question' | '/quiz' | '/surprise'
+  to: '/' | '/cake' | '/memory' | '/question' | '/quiz' | '/surprise'
+  id:
+    | '__root__'
+    | '/'
+    | '/cake'
+    | '/memory'
+    | '/question'
+    | '/quiz'
+    | '/surprise'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CakeRoute: typeof CakeRoute
+  MemoryRoute: typeof MemoryRoute
   QuestionRoute: typeof QuestionRoute
   QuizRoute: typeof QuizRoute
   SurpriseRoute: typeof SurpriseRoute
@@ -102,6 +119,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuestionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/memory': {
+      id: '/memory'
+      path: '/memory'
+      fullPath: '/memory'
+      preLoaderRoute: typeof MemoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cake': {
       id: '/cake'
       path: '/cake'
@@ -122,6 +146,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CakeRoute: CakeRoute,
+  MemoryRoute: MemoryRoute,
   QuestionRoute: QuestionRoute,
   QuizRoute: QuizRoute,
   SurpriseRoute: SurpriseRoute,
