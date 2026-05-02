@@ -48,7 +48,7 @@ function SurprisePage() {
           transition={{ duration: 0.9 }}
           className="font-serif-display text-6xl md:text-8xl text-shimmer leading-none animate-pulse-glow"
         >
-          No big gift 😄
+          Kuch zyada special nahi… bas ek baat hai 😊
         </motion.h1>
 
         <motion.p
