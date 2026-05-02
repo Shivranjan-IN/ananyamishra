@@ -48,7 +48,7 @@ function SurprisePage() {
           transition={{ duration: 0.9 }}
           className="font-serif-display text-6xl md:text-8xl text-shimmer leading-none animate-pulse-glow"
         >
-          It's just <span className="italic">us</span>.
+          No big gift 😄
         </motion.h1>
 
         <motion.p
@@ -57,8 +57,10 @@ function SurprisePage() {
           transition={{ delay: 0.8 }}
           className="font-serif-display italic text-xl md:text-2xl text-foreground/90"
         >
-          No grand prize. No fancy gift. Just me, choosing you — loudly,
-          quietly, sleepily, ridiculously — every single day.
+          But honestly… my favorite memory with you is when you wore the
+          earrings I gave you 👀
+          <br />
+          <span className="not-italic">That moment just felt… different 😊</span>
         </motion.p>
 
         <motion.div
@@ -67,8 +69,8 @@ function SurprisePage() {
           transition={{ delay: 1.4 }}
           className="space-y-2"
         >
-          <p className="font-script text-2xl text-primary">happy birthday, my whole heart 💗</p>
-          <p className="text-muted-foreground text-sm">— P.S. you owe me one (1) kiss for making it this far.</p>
+          <p className="font-script text-3xl text-primary">Happy birthday, Lali 🎂💗</p>
+          <p className="text-muted-foreground text-sm italic">— P.S. ek smile toh banta hai 😏</p>
         </motion.div>
 
         <motion.div
