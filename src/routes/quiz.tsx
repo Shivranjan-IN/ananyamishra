@@ -17,22 +17,16 @@ type Q = { q: string; options: string[]; correct: number; tease: string };
 
 const questions: Q[] = [
   {
-    q: "Who is the cutest person on planet Earth?",
-    options: ["Me (obviously)", "You 💖", "A baby panda", "My ex 🙄"],
-    correct: 1,
-    tease: "Galat Lali 😤 Sirf ek hi sahi jawab hai — TUM 💖",
-  },
-  {
-    q: "How much do I love you?",
-    options: ["A little", "A lot", "To the moon 🌙", "Infinity × ∞"],
-    correct: 3,
-    tease: "Nope Lali, infinite se bhi zyada 🥹 ek baar aur try karo",
-  },
-  {
     q: "What's the best part of my day lately? 😄",
     options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
     correct: 2,
     tease: "Hmm Lali, soch ke bata 👀 (hint: it's you 💖)",
+  },
+  {
+    q: "Lali, how much do I like you? 💖",
+    options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
+    correct: 3,
+    tease: "Nope Lali 🙈 itna kam nahi — infinite se bhi zyada 💖",
   },
 ];
 
