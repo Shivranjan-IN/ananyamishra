@@ -34,6 +34,14 @@ function QuestionPage() {
     "Ek baar aur soch lo 💭",
     "Nahi chalega Lali 💔",
     "Catch me if you can, Lali 🏃‍♀️",
+    "Lali, button bhi sharma gaya 🙈",
+    "Itni tezi se kahan, Lali? 😅",
+    "Drama queen Lali detected 👑",
+    "Lali ji, dil tod dogi 💔",
+    "Arre yaar Lali, Yes daba do na 🥺",
+    "Lali = 1, Button = 0… abhi tak 😜",
+    "Thak gayi Lali? Yes is right there 👉",
+    "Bas kar Lali, hass hass ke pet dukh gaya 🤣",
   ];
   const noLabel = teases[Math.min(dodges, teases.length - 1)];
 
