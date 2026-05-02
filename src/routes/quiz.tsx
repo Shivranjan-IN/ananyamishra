@@ -20,13 +20,13 @@ const questions: Q[] = [
     q: "Who is the cutest person on planet Earth?",
     options: ["Me (obviously)", "You 💖", "A baby panda", "My ex 🙄"],
     correct: 1,
-    tease: "Wrong. The only correct answer is YOU.",
+    tease: "Galat Lali 😤 Sirf ek hi sahi jawab hai — TUM 💖",
   },
   {
     q: "How much do I love you?",
     options: ["A little", "A lot", "To the moon 🌙", "Infinity × ∞"],
     correct: 3,
-    tease: "Nope. It's literally infinite. Try again 😤",
+    tease: "Nope Lali, infinite se bhi zyada 🥹 ek baar aur try karo",
   },
   {
     q: "What's the best part of my day lately? 😄",
@@ -40,16 +40,31 @@ function QuizPage() {
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
   const [wrongMsg, setWrongMsg] = useState<string | null>(null);
+  const [wrongCount, setWrongCount] = useState(0);
+
+  const extraTeases = [
+    "Acha Lali, ek aur chance 🙈",
+    "Hint: dil se socho Lali 💗",
+    "Lali ji, dimaag nahi dil lagao 😜",
+    "Itni smart ho Lali, ye to easy hai 🤭",
+    "Galat! Lali ko detention milegi 📚😆",
+  ];
 
   const current = questions[step];
 
   const choose = (i: number) => {
     if (i === current.correct) {
       setWrongMsg(null);
+      setWrongCount(0);
       if (step + 1 >= questions.length) navigate({ to: "/cake" });
       else setStep(step + 1);
     } else {
-      setWrongMsg(current.tease);
+      const msg =
+        wrongCount === 0
+          ? current.tease
+          : extraTeases[(wrongCount - 1) % extraTeases.length];
+      setWrongMsg(msg);
+      setWrongCount((c) => c + 1);
     }
   };
 
