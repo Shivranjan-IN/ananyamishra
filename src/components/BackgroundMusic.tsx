@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Music, VolumeX } from "lucide-react";
 
-// Royalty-free romantic piano loop (Pixabay CDN)
-const TRACK_URL =
-  "https://cdn.pixabay.com/audio/2022/10/30/audio_347ed0cd9b.mp3";
+// Local track uploaded by user
+const TRACK_URL = "/music/co2.mp3";
 
 export function BackgroundMusic() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
