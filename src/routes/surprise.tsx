@@ -46,9 +46,9 @@ function SurprisePage() {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9 }}
-          className="font-serif-display text-6xl md:text-8xl text-shimmer leading-none animate-pulse-glow"
+          className="font-serif-display text-5xl md:text-7xl text-shimmer leading-tight animate-pulse-glow"
         >
-          Kuch zyada special nahi… bas ek baat hai 😊
+          Have something special coming soon ✨
         </motion.h1>
 
         <motion.p
