@@ -20,13 +20,13 @@ const questions: Q[] = [
     q: "What's the best part of my day lately? 😄",
     options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
     correct: 2,
-    tease: "Arre Lali 🙄 burger thodi na hai tu… wait 🍔👀",
+    tease: "Awww Lali 🙈 burger nahi, aap ho meri din ki sabse pyaari cheez 🍔➡️💖",
   },
   {
     q: "Lali, how much do I like you? 💖",
     options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
     correct: 3,
-    tease: "Itna kam?! 😤 Lali calculator kharab hai kya tera 🤣",
+    tease: "Itna kam?! 😤 Lali ji, pyaar ka calculator overflow ho gaya hai 💞♾️",
   },
 ];
 
@@ -37,18 +37,19 @@ function QuizPage() {
   const [wrongCount, setWrongCount] = useState(0);
 
   const extraTeases = [
-    "Galat Lali! 🙈 dimaag kahaan chhod ke aayi ho? 🤭",
-    "Hawww 😱 itna bhi nahi pata? school wapas jaana padega 📚😆",
-    "Lali ji 🙄 Google bhi has raha hai abhi 🤣",
-    "Nope! 🚫 ek aur galat aur chai band 🍵😜",
-    "Arey budhuram 🐥 dil se socho, dimaag se nahi 💗",
-    "Bilkul galat 😂 ab to sharam aani chahiye Lali ji ko 🙊",
-    "Lali = 0 / Pyaar = ∞ … abhi bhi galat? 🤡",
-    "Hint: answer wahi hai jo aap mujhe lagti ho 💖 (clue: best wala)",
-    "Tch tch tch 😏 itni cute ho ke itni galat? kaise?! 🥲",
-    "Galat! Punishment: 10 jhappi pending hain Lali ji ke naam 🤗💞",
-    "Oye hoye 🙃 itna easy tha, fir bhi miss? 🎯",
-    "Naa naa naa 🙅‍♂️ Lali ji se ye ummeed nahi thi 😂",
+    "Galat 🙈 par koi baat nahi… meri Lali galti me bhi cute lagti hain 💗",
+    "Hawww 😱 dil ne sahi bola tha, dimaag ne dhoka de diya 💔😂",
+    "Nope! 🚫 ek aur galat = ek extra jhappi pending 🤗💞",
+    "Arre Lali ji 🙄 itna sochne ki zarurat nahi… answer to hum hi hain 😜💖",
+    "Bilkul galat 😆 lekin smile dekh ke maaf kiya jaata hai 🥺💕",
+    "Pyaar = ∞, Lali ka score = 0 abhi tak 🤡 chaliye ek aur try 💘",
+    "Hint: jo cheez aapko 24x7 yaad karta hai… wahi answer hai 😉💖",
+    "Tch tch 😏 itni pyaari ho ke itni galat, dil to fir bhi aapka hi hai 🫶",
+    "Galat! 🚨 punishment: ek long video call aaj raat 📞🌙",
+    "Oye hoye 🙃 dil dhadakna bhool gaya kya jawab dete waqt? 💓",
+    "Naa naa Lali ji 🙅‍♂️ itni cute galti sirf aap hi kar sakti ho 😘",
+    "Galat hai, par aapki har galti pe bhi pyaar aata hai 🥰✨",
+    "Hmmm 🤔 lagta hai dil busy hai mujhe yaad karne me, isliye dimaag fail 💖😆",
   ];
 
   const current = questions[step];
