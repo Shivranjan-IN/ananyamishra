@@ -20,13 +20,13 @@ const questions: Q[] = [
     q: "What's the best part of my day lately? 😄",
     options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
     correct: 2,
-    tease: "",
+    tease: "Hmm Lali, soch ke bata 👀 (hint: it's you 💖)",
   },
   {
     q: "Lali, how much do I like you? 💖",
     options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
     correct: 3,
-    tease: "",
+    tease: "Nope Lali 🙈 itna kam nahi — infinite se bhi zyada 💖",
   },
 ];
 
@@ -36,7 +36,13 @@ function QuizPage() {
   const [wrongMsg, setWrongMsg] = useState<string | null>(null);
   const [wrongCount, setWrongCount] = useState(0);
 
-  const extraTeases: string[] = [];
+  const extraTeases = [
+    "Acha Lali, ek aur chance 🙈",
+    "Hint: dil se socho Lali 💗",
+    "Lali ji, dimaag nahi dil lagao 😜",
+    "Itni smart ho Lali, ye to easy hai 🤭",
+    "Galat! Lali ko detention milegi 📚😆",
+  ];
 
   const current = questions[step];
 
