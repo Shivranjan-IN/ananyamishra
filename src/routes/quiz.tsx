@@ -37,16 +37,18 @@ function QuizPage() {
   const [wrongCount, setWrongCount] = useState(0);
 
   const extraTeases = [
-    "Galat Lali! 🙈 dimaag kaha chhod ke aayi ho? 🤭",
-    "Hawww 😱 itna bhi nahi pata? school jaa wapas 📚😆",
+    "Galat Lali! 🙈 dimaag kahaan chhod ke aayi ho? 🤭",
+    "Hawww 😱 itna bhi nahi pata? school wapas jaana padega 📚😆",
     "Lali ji 🙄 Google bhi has raha hai abhi 🤣",
     "Nope! 🚫 ek aur galat aur chai band 🍵😜",
     "Arey budhuram 🐥 dil se socho, dimaag se nahi 💗",
-    "Bilkul galat 😂 ab to sharam aa rahi hogi tujhe 🙊",
+    "Bilkul galat 😂 ab to sharam aani chahiye Lali ji ko 🙊",
     "Lali = 0 / Pyaar = ∞ … abhi bhi galat? 🤡",
-    "Hint: answer wahi hai jo tu mujhe lagti hai 💖 (clue: best wala)",
+    "Hint: answer wahi hai jo aap mujhe lagti ho 💖 (clue: best wala)",
     "Tch tch tch 😏 itni cute ho ke itni galat? kaise?! 🥲",
-    "Galat! Punishment: 10 jhappi pending 🤗💞",
+    "Galat! Punishment: 10 jhappi pending hain Lali ji ke naam 🤗💞",
+    "Oye hoye 🙃 itna easy tha, fir bhi miss? 🎯",
+    "Naa naa naa 🙅‍♂️ Lali ji se ye ummeed nahi thi 😂",
   ];
 
   const current = questions[step];
