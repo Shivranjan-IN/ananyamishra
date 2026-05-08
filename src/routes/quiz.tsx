@@ -20,13 +20,13 @@ const questions: Q[] = [
     q: "What's the best part of my day lately? 😄",
     options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
     correct: 2,
-    tease: "Hmm Lali, soch ke bata 👀 (hint: it's you 💖)",
+    tease: "Arre Lali 🙄 burger thodi na hai tu… wait 🍔👀",
   },
   {
     q: "Lali, how much do I like you? 💖",
     options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
     correct: 3,
-    tease: "Nope Lali 🙈 itna kam nahi — infinite se bhi zyada 💖",
+    tease: "Itna kam?! 😤 Lali calculator kharab hai kya tera 🤣",
   },
 ];
 
@@ -37,11 +37,16 @@ function QuizPage() {
   const [wrongCount, setWrongCount] = useState(0);
 
   const extraTeases = [
-    "Acha Lali, ek aur chance 🙈",
-    "Hint: dil se socho Lali 💗",
-    "Lali ji, dimaag nahi dil lagao 😜",
-    "Itni smart ho Lali, ye to easy hai 🤭",
-    "Galat! Lali ko detention milegi 📚😆",
+    "Galat Lali! 🙈 dimaag kaha chhod ke aayi ho? 🤭",
+    "Hawww 😱 itna bhi nahi pata? school jaa wapas 📚😆",
+    "Lali ji 🙄 Google bhi has raha hai abhi 🤣",
+    "Nope! 🚫 ek aur galat aur chai band 🍵😜",
+    "Arey budhuram 🐥 dil se socho, dimaag se nahi 💗",
+    "Bilkul galat 😂 ab to sharam aa rahi hogi tujhe 🙊",
+    "Lali = 0 / Pyaar = ∞ … abhi bhi galat? 🤡",
+    "Hint: answer wahi hai jo tu mujhe lagti hai 💖 (clue: best wala)",
+    "Tch tch tch 😏 itni cute ho ke itni galat? kaise?! 🥲",
+    "Galat! Punishment: 10 jhappi pending 🤗💞",
   ];
 
   const current = questions[step];
