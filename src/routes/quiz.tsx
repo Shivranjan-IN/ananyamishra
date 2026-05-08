@@ -26,7 +26,7 @@ const questions: Q[] = [
     q: "Lali, how much do I like you? 💖",
     options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
     correct: 3,
-    tease: "Itna kam?! 😅 Lali ji, friendship me thoda zyada hi maante hain hum 💫",
+    tease: "Itna kam?! 😅 Lali ji, hum to thoda zyada hi maante hain aapko 💫",
   },
 ];
 
@@ -37,14 +37,14 @@ function QuizPage() {
   const [wrongCount, setWrongCount] = useState(0);
 
   const extraTeases = [
-    "Galat 🙈 par chalo, dosti me ek mauka aur banta hai 😄",
-    "Hawww 😱 itna easy sawaal aur Lali ji se miss? naa yaar 🤭",
-    "Nope! 🚫 try again Lali, dost ho meri sabse smart wali 💫",
-    "Arre yaar 🙄 itna sochne ki zarurat nahi, simple sa answer hai 😜",
+    "Galat 🙈 par chalo, ek mauka aur banta hai 😄",
+    "Hawww 😱 itna easy sawaal aur Lali ji se miss? naa naa 🤭",
+    "Nope! 🚫 try again Lali, aap to sabse smart ho 💫",
+    "Arre 🙄 itna sochne ki zarurat nahi, simple sa answer hai 😜",
     "Bilkul galat 😆 par smile abhi bhi best hai aapki 🌸",
     "Hmm 🤔 lagta hai aaj mood off hai… ek aur try karein? 🫶",
-    "Hint: jo dost roz baat karta hai aapse… haan wahi 😉✨",
-    "Tch tch 😏 itni pyaari dost ho, par answers thode kachhe hain 🥲",
+    "Hint: jo roz baat karta hai aapse… haan wahi 😉✨",
+    "Tch tch 😏 itni pyaari ho, par answers thode kachhe hain 🥲",
     "Galat! 🚨 punishment: ek lambi call aur ढेर saari baatein 📞🌙",
     "Oye 🙃 dimaag thoda dheere chal raha hai aaj, sab ok? 💭",
     "Naa naa Lali ji 🙅‍♂️ aapse ye galti expect nahi thi 😅",
