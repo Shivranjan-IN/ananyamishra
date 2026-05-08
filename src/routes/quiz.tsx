@@ -20,13 +20,13 @@ const questions: Q[] = [
     q: "What's the best part of my day lately? 😄",
     options: ["Food 🍔", "Sleep 😴", "Talking to you 💖", "Phone scrolling"],
     correct: 2,
-    tease: "Awww Lali 🙈 burger nahi, aap ho meri din ki sabse pyaari cheez 🍔➡️💖",
+    tease: "Arre Lali 🙈 itna bhi nahi pata? aapse baat karna hi to fav part hai 😄",
   },
   {
     q: "Lali, how much do I like you? 💖",
     options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
     correct: 3,
-    tease: "Itna kam?! 😤 Lali ji, pyaar ka calculator overflow ho gaya hai 💞♾️",
+    tease: "Itna kam?! 😅 Lali ji, friendship me thoda zyada hi maante hain hum 💫",
   },
 ];
 
@@ -37,19 +37,20 @@ function QuizPage() {
   const [wrongCount, setWrongCount] = useState(0);
 
   const extraTeases = [
-    "Galat 🙈 par koi baat nahi… meri Lali galti me bhi cute lagti hain 💗",
-    "Hawww 😱 dil ne sahi bola tha, dimaag ne dhoka de diya 💔😂",
-    "Nope! 🚫 ek aur galat = ek extra jhappi pending 🤗💞",
-    "Arre Lali ji 🙄 itna sochne ki zarurat nahi… answer to hum hi hain 😜💖",
-    "Bilkul galat 😆 lekin smile dekh ke maaf kiya jaata hai 🥺💕",
-    "Pyaar = ∞, Lali ka score = 0 abhi tak 🤡 chaliye ek aur try 💘",
-    "Hint: jo cheez aapko 24x7 yaad karta hai… wahi answer hai 😉💖",
-    "Tch tch 😏 itni pyaari ho ke itni galat, dil to fir bhi aapka hi hai 🫶",
-    "Galat! 🚨 punishment: ek long video call aaj raat 📞🌙",
-    "Oye hoye 🙃 dil dhadakna bhool gaya kya jawab dete waqt? 💓",
-    "Naa naa Lali ji 🙅‍♂️ itni cute galti sirf aap hi kar sakti ho 😘",
-    "Galat hai, par aapki har galti pe bhi pyaar aata hai 🥰✨",
-    "Hmmm 🤔 lagta hai dil busy hai mujhe yaad karne me, isliye dimaag fail 💖😆",
+    "Galat 🙈 par chalo, dosti me ek mauka aur banta hai 😄",
+    "Hawww 😱 itna easy sawaal aur Lali ji se miss? naa yaar 🤭",
+    "Nope! 🚫 try again Lali, dost ho meri sabse smart wali 💫",
+    "Arre yaar 🙄 itna sochne ki zarurat nahi, simple sa answer hai 😜",
+    "Bilkul galat 😆 par smile abhi bhi best hai aapki 🌸",
+    "Hmm 🤔 lagta hai aaj mood off hai… ek aur try karein? 🫶",
+    "Hint: jo dost roz baat karta hai aapse… haan wahi 😉✨",
+    "Tch tch 😏 itni pyaari dost ho, par answers thode kachhe hain 🥲",
+    "Galat! 🚨 punishment: ek lambi call aur ढेर saari baatein 📞🌙",
+    "Oye 🙃 dimaag thoda dheere chal raha hai aaj, sab ok? 💭",
+    "Naa naa Lali ji 🙅‍♂️ aapse ye galti expect nahi thi 😅",
+    "Galat hai, par aapki har koshish pe haska aata hai 😄💛",
+    "Lagta hai chai pi ke aana padega Lali ko ☕ phir try karein 😉",
+    "Hmmm 💭 dil ko thoda sun lo, wahi sahi answer bata raha hai 💗",
   ];
 
   const current = questions[step];
