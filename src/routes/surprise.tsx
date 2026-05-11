@@ -46,21 +46,13 @@ function SurprisePage() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="mx-auto w-56 md:w-72 h-auto drop-shadow-[0_20px_40px_oklch(0.72_0.19_10/0.6)] animate-pulse-glow"
         />
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="font-script text-3xl text-accent"
-        >
-          okay, the real surprise…
-        </motion.p>
-
         <motion.h1
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9 }}
           className="font-serif-display text-5xl md:text-7xl text-shimmer leading-tight animate-pulse-glow"
         >
-          Have something special coming soon ✨
+          Happy Birthday Ananya 🎂💗
         </motion.h1>
 
         <motion.p
