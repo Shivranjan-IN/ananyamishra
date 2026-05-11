@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Happy Birthday, My Love 💕" },
+      { title: "Happy Birthday 💕" },
       { name: "description", content: "A little surprise made just for you — with all my love." },
     ],
   }),
