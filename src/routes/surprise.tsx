@@ -89,12 +89,6 @@ function SurprisePage() {
           >
             ↺ start over
           </Link>
-          <Link
-            to="/memory"
-            className="px-6 py-3 rounded-full font-serif-display text-base border border-accent/40 bg-accent/10 backdrop-blur hover:bg-accent/20 transition"
-          >
-            📖 read the memory
-          </Link>
           <button
             onClick={() =>
               confetti({
