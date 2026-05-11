@@ -30,14 +30,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "ananyamishra" },
+      { name: "description", content: "An animated birthday surprise website designed to delight a loved one with personalized messages and interactive elements." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "ananyamishra" },
+      { property: "og:description", content: "An animated birthday surprise website designed to delight a loved one with personalized messages and interactive elements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "ananyamishra" },
+      { name: "twitter:description", content: "An animated birthday surprise website designed to delight a loved one with personalized messages and interactive elements." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d22d52a5-7344-4222-a049-a145c3654bd0/id-preview-c2b4e8c4--8bd91d47-7548-4338-bb6f-99eee301e174.lovable.app-1778498815193.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d22d52a5-7344-4222-a049-a145c3654bd0/id-preview-c2b4e8c4--8bd91d47-7548-4338-bb6f-99eee301e174.lovable.app-1778498815193.png" },
     ],
     links: [
       {
