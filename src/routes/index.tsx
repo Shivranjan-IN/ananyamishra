@@ -85,9 +85,31 @@ function Index() {
                 <p className="text-muted-foreground text-base md:text-lg italic">
                   Open the gift below — it’s waiting for you 💝
                 </p>
+                <p className="text-foreground/80 text-sm md:text-base max-w-md mx-auto pt-2">
+                  Aaj ka din sirf tumhara hai… ek chhoti si duniya banayi hai tumhare liye —
+                  thodi si shararat, thoda sa pyaar, aur bahut saari yaadein. ✨
+                </p>
+                <p className="font-script text-lg md:text-xl text-accent/90 pt-1">
+                  ek button tap karo… aur dekho kya hota hai 💫
+                </p>
               </div>
 
               <GiftBox opened={opened} onOpen={() => setOpened(true)} />
+
+              <div className="flex flex-wrap items-center justify-center gap-3 pt-4 text-xs md:text-sm text-muted-foreground">
+                <span className="px-3 py-1 rounded-full border border-border/60 bg-card/10 backdrop-blur">
+                  🎂 a cake
+                </span>
+                <span className="px-3 py-1 rounded-full border border-border/60 bg-card/10 backdrop-blur">
+                  💌 a memory
+                </span>
+                <span className="px-3 py-1 rounded-full border border-border/60 bg-card/10 backdrop-blur">
+                  🌹 a surprise
+                </span>
+                <span className="px-3 py-1 rounded-full border border-border/60 bg-card/10 backdrop-blur">
+                  💖 & a lot of love
+                </span>
+              </div>
             </motion.div>
           ) : (
             <motion.div
