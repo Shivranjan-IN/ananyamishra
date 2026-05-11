@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { FloatingHearts } from "@/components/FloatingHearts";
+import bouquetImg from "@/assets/pink-rose-bouquet.png";
 
 export const Route = createFileRoute("/surprise")({
   component: SurprisePage,
@@ -34,6 +35,17 @@ function SurprisePage() {
       <FloatingHearts count={36} />
 
       <div className="relative z-10 max-w-2xl space-y-8">
+        <motion.img
+          src={bouquetImg}
+          alt="Pink rose bouquet for Lali"
+          width={1024}
+          height={1024}
+          loading="lazy"
+          initial={{ opacity: 0, y: 30, scale: 0.85 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="mx-auto w-56 md:w-72 h-auto drop-shadow-[0_20px_40px_oklch(0.72_0.19_10/0.6)] animate-pulse-glow"
+        />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
