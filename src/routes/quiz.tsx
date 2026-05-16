@@ -23,8 +23,8 @@ const questions: Q[] = [
     tease: "Arre Lali 🙈 itna bhi nahi pata? aapse baat karna hi to fav part hai 😄",
   },
   {
-    q: "Lali, how much do I like you? 💖",
-    options: ["Thoda sa 🤏", "Bahut zyada 🥰", "Chand tak 🌙", "Infinity × ∞ 💞"],
+    q: "Hamare beech ka best joke kya hai? 😂",
+    options: ["Modi Modi Modi 😭", "Rahul Gandhi Rahul Gandhi 💀", "Ewwwwwww 👀", "Chhichaledar 🤡"],
     correct: 3,
     tease: "Itna kam?! 😅 Lali ji, hum to thoda zyada hi maante hain aapko 💫",
   },
@@ -43,7 +43,6 @@ function QuizPage() {
     "Arre 🙄 itna sochne ki zarurat nahi, simple sa answer hai 😜",
     "Bilkul galat 😆 par smile abhi bhi best hai aapki 🌸",
     "Hmm 🤔 lagta hai aaj mood off hai… ek aur try karein? 🫶",
-    "Hint: jo roz baat karta hai aapse… haan wahi 😉✨",
     "Tch tch 😏 itni pyaari ho, par answers thode kachhe hain 🥲",
     "Galat! 🚨 punishment: ek lambi call aur ढेर saari baatein 📞🌙",
     "Oye 🙃 dimaag thoda dheere chal raha hai aaj, sab ok? 💭",
